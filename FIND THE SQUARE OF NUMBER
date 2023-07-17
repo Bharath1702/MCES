@@ -1,0 +1,19 @@
+	LDR R0,=LOOKUP
+	LDR R1,=5
+	LSL R1,#2
+	ADD R0,R1
+	LDR R2,[R0]
+LOOKUP
+	DCD 0
+		DCD 1
+			DCD 4
+				DCD 9
+					DCD 16
+						DCD 25
+							DCD 36
+								DCD 49
+									DCD 64
+										DCD 81
+											DCD 100
+									
+							
