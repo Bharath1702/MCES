@@ -1,0 +1,13 @@
+area oneszero,code,readonly
+	mov r0,#1
+	ldr r1,=0x40000000
+	ldrh r2,[r1]
+start tst r2,#0x1
+	addeq r9,r9,#1
+	addne r10,r10,#1
+	lsr r2,#1
+	add r0,r0,#1
+	cmp r0,#16
+	ble start	
+stop b stop
+	end 
